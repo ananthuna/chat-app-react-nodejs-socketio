@@ -5,7 +5,7 @@ const http = require('http');
 const { Server } = require('socket.io')
 const cors = require('cors')
 const fs = require('fs');
-const url = 'mongodb+srv://ananthuna:2WjCKPyQDVu9GPxs@cluster0.mpqkryz.mongodb.net/?retryWrites=true&w=majority'; // Connection URL
+const url = 'mongodb+srv://newonw:YnzPDktR07RptuHR@cluster0.mpqkryz.mongodb.net/?retryWrites=true&w=majority'; // Connection URL
 const db = require('monk')(url);
 const collectionUser = db.get('users')
 const collectionActiveUsers = db.get('activeUsers')
@@ -14,17 +14,17 @@ const cookieParser = require("cookie-parser");
 const multer = require('multer')
 const port = process.env.PORT || 8080
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use(cors({
-//     origin: 'http://localhost:3000',
-//     credentials: true,
-// }));
+app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true,
+}));
 app.use(sessionMiddlewear)
 app.use(cookieParser());
-app.use(express.static('build'));
+// app.use(express.static('build'));
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
 

@@ -1,7 +1,7 @@
 const session = require('express-session')
 const MongoDBSessionStore = require('connect-mongodb-session')(session)
 const store = new MongoDBSessionStore({
-    uri: 'mongodb+srv://ananthuna:2WjCKPyQDVu9GPxs@cluster0.mpqkryz.mongodb.net/test?retryWrites=true&w=majority',
+    uri: 'mongodb+srv://newonw:YnzPDktR07RptuHR@cluster0.mpqkryz.mongodb.net/test?retryWrites=true&w=majority',
     collection: 'session'
 })
 const sessionMiddlewear = session({
