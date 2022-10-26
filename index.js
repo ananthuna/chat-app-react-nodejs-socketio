@@ -5,7 +5,7 @@ const http = require('http');
 const { Server } = require('socket.io')
 const cors = require('cors')
 const fs = require('fs');
-const url = 'mongodb+srv://newonw:YnzPDktR07RptuHR@cluster0.mpqkryz.mongodb.net/?retryWrites=true&w=majority'; // Connection URL
+const url = 'mongodb+srv://ananthuna:2WjCKPyQDVu9GPxs@cluster0.mpqkryz.mongodb.net/?retryWrites=true&w=majority'; // Connection URL
 const db = require('monk')(url);
 const collectionUser = db.get('users')
 const collectionActiveUsers = db.get('activeUsers')
